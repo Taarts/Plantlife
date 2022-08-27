@@ -13,21 +13,28 @@
 #small {
   height: 25rem;
   width: 25rem;
+  border-radius: 0.5rem;
 }
-#container {
-  margin-top: 0.5rem;
+.container {
+  padding: 0.5rem;
   height: 200px;
-  /* display: flex; */
+  width: 100%;
+  display: flex;
   display: grid;
   align-items: center;
   justify-content: center;
 }
-#fruit {
+span {
+  text-align: center;
   color: var(--font-color);
   font-size: 1.5rem;
 }
 .medium {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: larger;
+  /* justify-content: baseline; */
+  /* text-align: -moz-center; */
+  color: var(--font-color);
 }
 .subhead {
   font-size: 1.5rem;
@@ -36,24 +43,23 @@
 }
 .center {
   box-align: center;
-  color: var(--font-color);
 }
 .main {
   background-color: var(--banner-color);
   color: var(--font-color);
   height: 48rem;
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
   padding: 0.5rem 0 0;
   text-align: center;
 }
 nav {
+  text-align: right;
   height: 3rem;
   background-color: var(--main-color);
-  padding: 40px 0 0 40px;
+  padding: 40px 40px 0 40px;
 }
 
 button {
-  /* position: sticky; */
   color: #fedbcc;
   padding: 0.5rem;
   border: none;
@@ -86,7 +92,6 @@ h1 {
   font-weight: bolder;
   font-size: 4rem;
   color: var(--font-color);
-  /* background-color: var(--background-color); */
 }
 h3 {
   margin: auto;
@@ -94,11 +99,10 @@ h3 {
   align-self: center;
   font-size: 1rem;
   color: var(--font-color);
-  /* background-color: var(--background-color); */
 }
 p {
-  padding: 10px 0 0 50px;
-  display: center;
+  padding: 10px 10px 0 50px;
+  text-align: -moz-center;
 }
 
 audio {
@@ -107,9 +111,9 @@ audio {
 }
 
 footer {
-  position: fixed;
+  /* position: fixed; */
   background-color: #303030;
-  justify-content: center;
+
   text-shadow: #191919;
   height: 5rem;
 }
