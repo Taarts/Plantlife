@@ -49,7 +49,7 @@
 nav {
   height: 3rem;
   background-color: var(--main-color);
-  padding: 10px 0 0 40px;
+  padding: 40px 0 0 40px;
 }
 
 button {
@@ -69,10 +69,13 @@ button:hover {
 
 a {
   text-decoration: none;
-  /* color: var(--font-color); */
+  padding: 5px 10px;
+  color: var(--banner-color);
 }
-/* a:hover {
-} */
+a:hover {
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
 
 body {
   background-color: var(--background-color);
