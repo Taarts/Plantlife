@@ -1,34 +1,112 @@
 :root {
   font-size: 16px/1 em;
   font-family: 'Rubik', sans-serif;
-  --main-color: #f5f5f5;
-  --font-color: rgb(37, 1, 12);
+  --main-color: #e3dcca;
+  --font-color: #fedbcc;
+  --font-sub: #2f3737;
+  --background-color: #303030;
+  --banner-color: #191919;
+}
+#logo {
+  text-decoration: underline;
+}
+#small {
+  height: 25rem;
+  width: 25rem;
+}
+#container {
+  margin-top: 0.5rem;
+  height: 200px;
+  /* display: flex; */
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+#fruit {
+  color: var(--font-color);
+  font-size: 1.5rem;
+}
+.medium {
+  font-weight: 500;
+}
+.subhead {
+  font-size: 1.5rem;
+  color: var(--font-color);
+  /* background-color: antiquewhite; */
+}
+.center {
+  box-align: center;
+  color: var(--font-color);
+}
+.main {
+  background-color: var(--banner-color);
+  color: var(--font-color);
+  height: 48rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0 0;
+  text-align: center;
+}
+nav {
+  height: 3rem;
+  background-color: var(--main-color);
+  padding: 10px 0 0 40px;
+}
+
+button {
+  /* position: sticky; */
+  color: #fedbcc;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: black;
+}
+button:hover {
+  color: black;
+  border-radius: 0.2rem;
+  border-color: #191919;
+  background-color: var(--font-color);
 }
 
 a {
+  text-decoration: none;
+  /* color: var(--font-color); */
 }
-a:hover {
-}
+/* a:hover {
+} */
 
 body {
-  background-color: var(--main-color);
+  background-color: var(--background-color);
 }
 
 h1 {
+  display: relative;
+  font-weight: bolder;
   font-size: 4rem;
   color: var(--font-color);
+  /* background-color: var(--background-color); */
 }
-#small {
-  border-radius: 0.5rem;
-}
-audio {
-  display: block;
-}
-.subhead {
+h3 {
+  margin: auto;
+  display: center;
+  align-self: center;
+  font-size: 1rem;
+  color: var(--font-color);
+  /* background-color: var(--background-color); */
 }
 p {
+  padding: 10px 0 0 50px;
+  display: center;
 }
-button {
+
+audio {
+  margin-top: 10px;
+  display: relative;
 }
-button:hover {
+
+footer {
+  position: fixed;
+  background-color: #303030;
+  justify-content: center;
+  text-shadow: #191919;
+  height: 5rem;
 }
