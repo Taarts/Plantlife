@@ -1,15 +1,23 @@
 :root {
   font-size: 16px/1 em;
   font-family: 'Rubik', sans-serif;
+
   --main-color: #e3dcca;
   --font-color: #fedbcc;
   --font-sub: #2f3737;
   --background-color: #303030;
   --banner-color: #191919;
 }
+@font-face {
+  font-family: 'Rubik Dirty';
+  font-style: bold;
+  font-weight: 700;
+  src: url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+}
 #logo {
   text-decoration: underline;
 }
+
 #small {
   height: 25rem;
   width: 25rem;
@@ -32,13 +40,10 @@ span {
 .medium {
   font-weight: 600;
   font-size: larger;
-  /* justify-content: baseline; */
-  /* text-align: -moz-center; */
   color: var(--font-color);
 }
 .subhead {
   font-size: 1.5rem;
-  color: var(--font-color);
   /* background-color: antiquewhite; */
 }
 .center {
@@ -79,6 +84,8 @@ a {
   color: var(--banner-color);
 }
 a:hover {
+  font-weight: bold;
+  border-radius: 0.25rem;
   color: var(--font-color);
   background-color: var(--background-color);
 }
@@ -88,10 +95,11 @@ body {
 }
 
 h1 {
-  display: relative;
-  font-weight: bolder;
+  font-variant: bold 1.5em 'Rubik Dirt' sans-serif;
+  /* display: relative; */
+  /* font-weight: bolder; */
   font-size: 4rem;
-  color: var(--font-color);
+  /* color: var(--font-color); */
 }
 h3 {
   margin: auto;
@@ -103,17 +111,28 @@ h3 {
 p {
   padding: 10px 10px 0 50px;
   text-align: -moz-center;
+  /* object-position: center; */
 }
 
 audio {
   margin-top: 10px;
   display: relative;
 }
+.emphasized {
+  max-width: 40%;
+  margin: auto;
+  display: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #191919;
+  padding: 1em 2em;
+  border-radius: 0.5rem;
+}
 
 footer {
-  /* position: fixed; */
-  background-color: #303030;
-
+  border-radius: 1.5rem;
+  border-color: var(--banner-color);
   text-shadow: #191919;
   height: 5rem;
+  color: var(--font-color);
 }
